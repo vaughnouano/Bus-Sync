@@ -27,6 +27,9 @@ CREATE TABLE `user` (
     last_login      DATETIME
 );
 
+
+ALTER TABLE user ADD COLUMN password VARCHAR(255) NOT NULL AFTER address;
+
 -- ============================================================
 -- TABLE: admin
 -- ============================================================
